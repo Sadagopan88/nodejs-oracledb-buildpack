@@ -82,6 +82,7 @@ create_env() {
   create_default_env
   echo "----Adding env----"
   add_oracle_env "$BUILD_DIR/.heroku"
+  echo "build dir in compile file = $BUILD_DIR"
   echo "----/Adding env----"
 }
 
