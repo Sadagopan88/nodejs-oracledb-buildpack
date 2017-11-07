@@ -11,7 +11,9 @@ add_oracle_env(){
     export LD_LIBRARY_PATH=$build_dir/oracle/instantclient:${LD_LIBRARY_PATH:-}
     export OCI_LIB_DIR=$build_dir/oracle/instantclient
     export OCI_INC_DIR=$build_dir/oracle/instantclient/sdk/include
+    echo "build directory = $build_dir"
     echo "----/Add Oracle env variables----"
+    echo "build directory = $build_dir"
   }
   
 list_node_config() {
