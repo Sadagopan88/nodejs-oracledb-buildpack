@@ -7,11 +7,12 @@ install_oracle_libraries(){
   cd $build_dir/oracle
   local sdk_download_url="https://github.com/Sadagopan88/nodejs-oracledb-buildpack/blob/master/instantclient-sdk.zip"
   local basic_download_url="https://github.com/Sadagopan88/nodejs-oracledb-buildpack/blob/master/instantclient-basic.zip"
-  wget "$basic_download_url" && wget "$basic_download_url".md5  && md5sum -c *.md5
+  wget "$basic_download_url"
   echo "Downloaded [$basic_download_url]"
   wget "$sdk_download_url"
   echo "Downloaded [$sdk_download_url]"
   echo $PWD
+  ls -lrt
   echo "unzipping libraries"
    unzip instantclient-basic.zip
    unzip instantclient-sdk.zip
