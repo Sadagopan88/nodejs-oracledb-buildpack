@@ -18,7 +18,7 @@ install_oracle_libraries(){
   mv instantclient_18_3 instantclient
   cd instantclient
   echo $PWD
-  ln -s libclntsh.so.12.1 libclntsh.so
+  ln -s libclntsh.so.18.1 libclntsh.so
   echo $PWD
 }
 
