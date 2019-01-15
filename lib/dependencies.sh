@@ -5,7 +5,7 @@ install_oracle_libraries(){
   echo "build dir = $build_dir"
   mkdir -p $build_dir/oracle
   cd $build_dir/oracle
-  local basic_download_url="http://download.oracle.com/otn/linux/instantclient/183000/instantclient-basic-linux.x64-18.3.0.0.0dbru.zip"
+  local basic_download_url="https://github.com/Sadagopan88/nodejs-oracledb-buildpack/blob/master/instantclient-basic-linux.x64-18.3.0.0.0dbru.zip"
   local sdk_download_url="https://github.com/Sadagopan88/nodejs-oracledb-buildpack/blob/master/nodejs-oracledb-buildpack-master.zip"
   curl -LOk "$basic_download_url"
   echo "Downloaded [$basic_download_url]"
