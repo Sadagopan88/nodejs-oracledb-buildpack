@@ -15,6 +15,7 @@ install_oracle_libraries(){
   ls -lrt
   echo "unzipping libraries"
    unzip instantclient-basic.zip
+   unzip instantclient-sdk.zip
   mv instantclient_18_3 instantclient
   cd instantclient
   echo $PWD
