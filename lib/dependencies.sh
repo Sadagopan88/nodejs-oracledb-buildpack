@@ -5,7 +5,7 @@ install_oracle_libraries(){
   echo "build dir = $build_dir"
   mkdir -p $build_dir/oracle
   cd $build_dir/oracle
-  local sdk_download_url="https://github.com/Sadagopan88/nodejs-oracledb-buildpack/blob/master/nodejs-oracledb-buildpack-master.zip"
+  local sdk_download_url="https://github.com/Sadagopan88/nodejs-oracledb-buildpack/blob/master/instantclient-sdk.zip"
   local basic_download_url="https://github.com/Sadagopan88/nodejs-oracledb-buildpack/blob/master/instantclient-basic.zip"
   wget "$basic_download_url"
   echo "Downloaded [$basic_download_url]"
@@ -15,7 +15,7 @@ install_oracle_libraries(){
   echo "unzipping libraries"
    unzip instantclient-basic.zip
    unzip instantclient-sdk.zip
-  mv instantclient_12_2 instantclient
+  mv instantclient_18_3 instantclient
   cd instantclient
   echo $PWD
   ln -s libclntsh.so.12.1 libclntsh.so
